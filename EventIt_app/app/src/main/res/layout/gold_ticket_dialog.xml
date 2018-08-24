@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvGold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Gold Ticket Type"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:textStyle="bold"
+        android:textSize="@dimen/marginButton"/>
+
+    <EditText
+        android:id="@+id/etAddGoldQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_login_main"
+        android:padding="@dimen/marginBottom"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:layout_marginHorizontal="@dimen/marginBottom"
+        android:hint="Quantity"/>
+
+    <EditText
+        android:id="@+id/etAddGoldPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_login_main"
+        android:padding="@dimen/marginBottom"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:layout_marginHorizontal="@dimen/marginBottom"
+        android:hint="Price"/>
+
+
+</LinearLayout>

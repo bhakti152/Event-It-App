@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lalit.eventit.FrgMain"
+    android:background="@android:color/black">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="180sp"
+        android:src="@drawable/events_it"
+        android:layout_marginTop="@dimen/marginButton" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/event_it_desc"
+        android:gravity="center"
+        android:layout_marginTop="200sp"
+        android:layout_marginHorizontal="25sp"
+        android:lineSpacingExtra="@dimen/marginBottom"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/marginButton"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/marginButton"
+        android:layout_marginHorizontal="@dimen/marginBottom">
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Login"
+            android:background="@drawable/btn_login_main"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/btnSignup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Signup"
+            android:background="@drawable/btn_login_main"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</RelativeLayout>

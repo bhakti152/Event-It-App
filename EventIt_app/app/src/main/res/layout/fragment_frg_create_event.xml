@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lalit.eventit.FrgCreateEvent"
+    android:orientation="vertical"
+    android:background="@color/eventBackground">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp">
+
+   <android.support.design.widget.TextInputEditText
+        android:id="@+id/etEventName"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/btn_login_main"
+        android:hint="Event Name"
+        android:paddingLeft="@dimen/marginBottom"
+       android:layout_marginHorizontal="@dimen/marginBottom"/>
+    </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etEventStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/btn_login_main"
+            android:hint="Event Start Date"
+            android:paddingLeft="@dimen/marginBottom"
+            android:layout_marginHorizontal="@dimen/marginBottom"
+            android:enabled="false"
+            android:drawableRight="@drawable/ic_calendar"
+            android:paddingRight="@dimen/marginButton" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etEventEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/btn_login_main"
+            android:hint="Event End Date"
+            android:layout_marginTop="@dimen/marginBottom"
+            android:layout_marginLeft="@dimen/marginBottom"
+            android:paddingLeft="@dimen/marginBottom"
+            android:layout_marginHorizontal="@dimen/marginBottom"
+            android:enabled="false"
+            android:drawableRight="@drawable/ic_calendar"
+            android:paddingRight="@dimen/marginButton"/>
+        </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+   <android.support.design.widget.TextInputEditText
+        android:id="@+id/etEventVenue"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/btn_login_main"
+        android:hint="Venue"
+        android:paddingLeft="@dimen/marginBottom"
+        android:layout_margin="@dimen/marginBottom"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <android.support.design.widget.TextInputEditText
+        android:id="@+id/etEventCity"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/btn_login_main"
+        android:hint="City"
+        android:paddingLeft="@dimen/marginBottom"
+        android:layout_margin="@dimen/marginBottom"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <android.support.design.widget.TextInputEditText
+        android:id="@+id/etEventDescription"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:background="@drawable/btn_login_main"
+        android:hint="Description"
+        android:paddingLeft="@dimen/marginBottom"
+        android:layout_margin="@dimen/marginBottom"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/btnCreateEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create Event"
+        android:background="@drawable/et_border"
+        android:layout_margin="@dimen/marginBottom"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

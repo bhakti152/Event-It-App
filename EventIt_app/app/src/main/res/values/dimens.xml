@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="marginHorizontal">10dp</dimen>
+    <dimen name="marginVertical">10dp</dimen>
+    <dimen name="marginLeft">10dp</dimen>
+    <dimen name="marginRight">10dp</dimen>
+    <dimen name="marginBottom">10dp</dimen>
+    <dimen name="marginTop">10dp</dimen>
+    <dimen name="marginButton">20dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="nav_header_vertical_spacing">8dp</dimen>
+    <dimen name="nav_header_height">176dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_right_margin">10dp</dimen>
+    <dimen name="activity_left_margin">10dp</dimen>
+    <dimen name="icon_width">50dip</dimen>
+    <dimen name="icon_height">50dip</dimen>
+    <dimen name="icon_padding">9dp</dimen>
+    <dimen name="card_height">250dip</dimen>
+    <dimen name="text_size">18sp</dimen>
+    <dimen name="my_icon_width">40dip</dimen>
+    <dimen name="my_icon_height">50dip</dimen>
+
+</resources>

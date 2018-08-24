@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lalit.eventit.FrgLogin"
+    android:id="@+id/rlLog"
+    android:background="@android:color/black">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="180sp"
+            android:src="@drawable/events_it"
+            android:layout_marginBottom="@dimen/marginButton" />
+
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:textColor="@android:color/black"
+            android:background="@drawable/btn_login_main"
+            android:layout_marginBottom="@dimen/marginBottom"
+            android:paddingVertical="@dimen/marginBottom"
+            android:paddingLeft="@dimen/marginBottom"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/marginHorizontal"
+            android:background="@drawable/btn_login_main"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/marginBottom"
+            android:paddingVertical="@dimen/marginBottom"
+            android:singleLine="true"
+
+            android:textColor="@android:color/black"
+            tools:imeActionId="@+id/login" />
+        <!--<CheckBox-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Remember Me"-->
+            <!--android:id="@+id/cbRememberMe"-->
+            <!--android:background="@android:color/white"/>-->
+
+
+        <Button
+            android:id="@+id/btnSignin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginHorizontal="@dimen/marginButton"
+            android:background="@drawable/btn_login_main"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/black"/>
+        <TextView
+            android:id="@+id/tvForgotPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Forgot Password?"
+            android:gravity="right"
+            android:layout_marginTop="20dp"
+            android:textColor="@android:color/white"
+            android:layout_marginRight="@dimen/marginButton"/>
+    </LinearLayout>
+
+</RelativeLayout>

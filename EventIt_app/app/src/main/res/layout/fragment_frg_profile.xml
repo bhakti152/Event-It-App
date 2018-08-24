@@ -1,0 +1,152 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.lalit.eventit.FrgProfile"
+    android:orientation="vertical"
+    android:background="@color/eventBackground"
+    android:layout_marginTop="50sp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+        android:layout_width="175sp"
+        android:layout_height="175sp"
+        android:layout_margin="@dimen/marginBottom"
+        android:src="@drawable/event_it"
+        android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lalit Nebhani"
+            android:gravity="center"
+            android:textColor="@color/colorPurple"
+            android:textSize="@dimen/marginButton"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_login_main"
+        android:padding="5sp"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:layout_marginHorizontal="@dimen/marginBottom">
+
+        <ImageButton
+            android:id="@+id/ibProfileEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:src="@drawable/ic_events"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/marginBottom"/>
+        <TextView
+            android:id="@+id/tvEventCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorPurple"
+            android:layout_marginLeft="@dimen/marginBottom"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/ibProfileEvent"/>
+        <TextView
+            android:id="@+id/tvEvents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Events"
+            android:textColor="@color/colorPurple"
+            android:layout_marginLeft="@dimen/marginBottom"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/tvEventCount"/>
+        <ImageButton
+            android:id="@+id/ibMembers"
+            android:layout_width="wrap_content"
+            android:layout_height="25sp"
+            android:src="@drawable/ic_events"
+            android:layout_gravity="center"
+            android:background="@android:color/white"
+            android:layout_marginRight="@dimen/marginBottom"
+            android:layout_toLeftOf="@id/tvMembersCount"/>
+        <TextView
+            android:id="@+id/tvMembersCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/colorPurple"
+            android:layout_marginRight="@dimen/marginBottom"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@id/tvMembers"/>
+        <TextView
+            android:id="@+id/tvMembers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Members"
+            android:textColor="@color/colorPurple"
+            android:layout_marginRight="@dimen/marginBottom"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <!--Yaha par Tabbed or Swipe layout Rakhna hai using Viewpager-->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50sp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Upcoming Events"
+        android:paddingLeft="@dimen/marginBottom"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:background="@color/colorPurple"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Ongoing Events"
+        android:paddingLeft="@dimen/marginButton"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:background="@color/colorPurple"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="Past Events"
+        android:paddingLeft="@dimen/marginButton"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:background="@color/colorPurple"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:layout_weight="1"/>
+</LinearLayout>
+    <!--Yaha par Tabbed or Swipe layout Rakhna hai using Viewpager-->
+    <LinearLayout
+        android:id="@+id/llEventsDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:paddingBottom="@dimen/marginBottom"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>

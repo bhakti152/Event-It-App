@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrgHasEvent"
+    android:background="@color/eventBackground"
+    android:id="@+id/rlHasEvent">
+
+    <TextView
+        android:id="@+id/tvEnterJoinCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enter Event Code below to Join"
+        android:gravity="center"
+        android:textColor="@color/colorPurple"
+        android:layout_marginBottom="@dimen/marginButton"
+        android:layout_centerInParent="true"
+        android:textSize="@dimen/marginButton"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/ilJoinCode"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/marginBottom"
+        android:paddingHorizontal="@dimen/marginButton"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:background="@drawable/btn_login_main"
+        android:layout_below="@+id/tvEnterJoinCode"
+        android:gravity="center"
+        android:layout_centerHorizontal="true">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etEnterJoinCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Code"
+            android:textSize="@dimen/marginButton"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:layout_width="250sp"
+        android:layout_height="wrap_content"
+        android:text="Join Event"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/marginButton"
+        android:layout_below="@+id/ilJoinCode"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/et_border"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>

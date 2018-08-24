@@ -1,0 +1,120 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:background="@color/eventBackground"
+    android:layout_marginTop="50sp">
+
+<android.support.v7.widget.CardView
+
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    card_view:cardCornerRadius="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+
+                <ImageView
+                    android:id="@+id/coverImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titleTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:textSize="@dimen/text_size"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/dateTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp"
+                        android:textSize="14dp"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="italic" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/viewImageView"
+                android:layout_width="@dimen/my_icon_width"
+                android:layout_height="@dimen/my_icon_height"
+                android:src="@drawable/ic_view_eventit" 
+                android:layout_weight="1"
+                android:padding="@dimen/marginBottom" />
+
+            <ImageView
+                android:id="@+id/editImageView"
+                android:layout_width="@dimen/my_icon_width"
+                android:layout_height="@dimen/my_icon_height"
+                android:src="@drawable/ic_edit_eventit"
+                android:layout_weight="1"
+                android:padding="@dimen/marginBottom"/>
+            
+            <ImageView
+                android:id="@+id/analysisImageView"
+                android:layout_width="@dimen/my_icon_width"
+                android:layout_height="@dimen/my_icon_height"
+                android:src="@drawable/ic_analytics_eventit"
+                android:layout_weight="1"
+                android:padding="@dimen/marginBottom"/>
+            <ImageView
+                android:id="@+id/memberImageView"
+                android:layout_width="@dimen/my_icon_width"
+                android:layout_height="@dimen/my_icon_height"
+                android:src="@drawable/ic_members_eventit"
+                android:layout_weight="1"
+                android:padding="@dimen/marginBottom"/>
+            <ImageView
+                android:id="@+id/notifyImageView"
+                android:layout_width="@dimen/my_icon_width"
+                android:layout_height="@dimen/my_icon_height"
+                android:src="@drawable/ic_notification_eventit"
+                android:layout_weight="1"
+                android:padding="@dimen/marginBottom"/>
+            <ImageView
+                android:id="@+id/deleteImageView"
+                android:layout_width="@dimen/my_icon_width"
+                android:layout_height="@dimen/my_icon_height"
+                android:src="@drawable/ic_delete_eventit"
+                android:layout_weight="1"
+                android:padding="@dimen/marginBottom"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
+    </LinearLayout>

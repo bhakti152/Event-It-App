@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/svTicketDialog">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/llTicketDialog">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etTicketType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_login_main"
+            android:hint="Type of Ticket"
+            android:padding="@dimen/marginBottom"
+            android:layout_marginHorizontal="@dimen/marginBottom"
+            android:layout_marginTop="@dimen/marginBottom"
+            android:inputType="text"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etTicketQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_login_main"
+            android:hint="Quantity of Ticket"
+            android:padding="@dimen/marginBottom"
+            android:layout_marginHorizontal="@dimen/marginBottom"
+            android:layout_marginTop="@dimen/marginBottom"
+            android:inputType="number"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etTicketPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_login_main"
+            android:hint="Price of Ticket"
+            android:padding="@dimen/marginBottom"
+            android:layout_marginHorizontal="@dimen/marginBottom"
+            android:layout_marginTop="@dimen/marginBottom"
+            android:inputType="number"/>
+    </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnAddMoreTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+ Add Ticcket"
+                android:background="@drawable/et_border"
+                android:textColor="@android:color/white"
+                android:padding="@dimen/marginBottom"
+                android:layout_marginHorizontal="@dimen/marginBottom"
+                android:layout_marginTop="@dimen/marginBottom"
+                android:textAllCaps="false"/>
+
+</LinearLayout>
+</ScrollView>

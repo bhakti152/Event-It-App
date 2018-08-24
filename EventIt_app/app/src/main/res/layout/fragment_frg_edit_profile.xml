@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FrgEditProfile"
+    android:orientation="vertical"
+    android:id="@+id/llProfileEditOrg"
+    android:theme="@style/AppTheme.NoActionBar">
+
+        <com.github.siyamed.shapeimageview.CircularImageView
+            android:id="@+id/ivOrgProfileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/event_it"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="60sp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="First Name"
+            android:id="@+id/etOrgFirstName"
+            android:inputType="text"
+            android:background="@drawable/btn_login_main"
+            android:padding="@dimen/marginBottom"
+            android:layout_marginHorizontal="@dimen/marginBottom"
+            android:layout_marginTop="@dimen/marginBottom"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Last Name"
+            android:id="@+id/etOrgLastName"
+            android:inputType="text"
+            android:background="@drawable/btn_login_main"
+            android:padding="@dimen/marginBottom"
+            android:layout_marginHorizontal="@dimen/marginBottom"
+            android:layout_marginTop="@dimen/marginBottom"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:id="@+id/etOrgNumber"
+            android:inputType="number"
+            android:maxLength="10"
+            android:background="@drawable/btn_login_main"
+            android:padding="@dimen/marginBottom"
+            android:layout_marginHorizontal="@dimen/marginBottom"
+            android:layout_marginTop="@dimen/marginBottom"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Aadhar Card Number"
+            android:id="@+id/etOrgAadharCardNumber"
+            android:inputType="number"
+            android:maxLength="12"
+            android:background="@drawable/btn_login_main"
+            android:padding="@dimen/marginBottom"
+            android:layout_marginHorizontal="@dimen/marginBottom"
+            android:layout_marginTop="@dimen/marginBottom"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address "
+            android:id="@+id/etOrgResidence"
+            android:background="@drawable/btn_login_main"
+            android:padding="@dimen/marginBottom"
+            android:layout_marginHorizontal="@dimen/marginBottom"
+            android:layout_marginTop="@dimen/marginBottom"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:id="@+id/etOrgCity"
+            android:inputType="number"
+            android:background="@drawable/btn_login_main"
+            android:padding="@dimen/marginBottom"
+            android:layout_marginHorizontal="@dimen/marginBottom"
+            android:layout_marginTop="@dimen/marginBottom"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Country"
+            android:id="@+id/etOrgCountry"
+            android:inputType="number"
+            android:background="@drawable/btn_login_main"
+            android:padding="@dimen/marginBottom"
+            android:layout_marginHorizontal="@dimen/marginBottom"
+            android:layout_marginTop="@dimen/marginBottom"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_gravity="center"
+            android:background="@drawable/et_border"
+            android:padding="@dimen/marginBottom"
+            android:layout_marginHorizontal="@dimen/marginBottom"
+            android:layout_marginTop="@dimen/marginBottom"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"/>
+
+</LinearLayout>
+

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lalit.eventit.ViewSubevent"
+    android:background="@color/eventBackground"
+    android:layout_marginTop="50sp">
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etSubEventName"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/btn_login_main"
+            android:hint="Event Name"
+            android:paddingLeft="@dimen/marginBottom"
+            android:layout_margin="@dimen/marginBottom"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/eSubEventStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/btn_login_main"
+            android:hint="Event Start Date"
+            android:paddingLeft="@dimen/marginBottom"
+            android:layout_margin="@dimen/marginBottom"
+            android:focusable="false"
+            android:drawableRight="@drawable/ic_calendar"
+            android:paddingRight="@dimen/marginButton"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etSubEventEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/btn_login_main"
+            android:hint="Event End Date"
+            android:layout_margin="@dimen/marginBottom"
+            android:focusable="false"
+            android:drawableRight="@drawable/ic_calendar"
+            android:paddingLeft="@dimen/marginBottom"
+            android:paddingRight="@dimen/marginButton"/>
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etSubEventVenue"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/btn_login_main"
+            android:hint="Venue"
+            android:paddingLeft="@dimen/marginBottom"
+            android:layout_margin="@dimen/marginBottom"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/etSubEventDescription"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:background="@drawable/btn_login_main"
+            android:hint="Description"
+            android:paddingLeft="@dimen/marginBottom"
+            android:layout_margin="@dimen/marginBottom"/>
+    </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Issue Ticket Types"
+            android:layout_marginLeft="@dimen/marginButton"
+            android:textSize="@dimen/marginButton"
+            android:textStyle="bold"/>
+
+     <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+         android:layout_marginHorizontal="@dimen/marginBottom"
+         android:layout_marginTop="@dimen/marginBottom">
+
+    <Button
+        android:id="@+id/btnSubEventTicketPremium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Premium Ticket"
+        android:background="@drawable/btn_login_main"
+        android:layout_weight="1"
+        android:textAllCaps="false"
+        android:layout_marginRight="2sp"/>
+
+       <Button
+           android:id="@+id/btnSubEventTicketGold"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Gold Ticket"
+           android:background="@drawable/btn_login_main"
+           android:layout_weight="1"
+           android:textAllCaps="false"
+           android:layout_marginRight="2sp"/>
+
+       <Button
+           android:id="@+id/btnSubEventTicketClassic"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Classic Ticket"
+           android:background="@drawable/btn_login_main"
+           android:layout_weight="1"
+           android:textAllCaps="false" />
+       
+   </LinearLayout>
+    <Button
+        android:id="@+id/btnCreateSubEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Create"
+        android:background="@drawable/et_border"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"/>
+
+    <Button
+        android:id="@+id/btnAddSubEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add another SubEvent"
+        android:background="@drawable/et_border"
+        android:layout_margin="@dimen/marginBottom"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:paddingHorizontal="@dimen/marginButton"/>
+        
+
+
+    </LinearLayout>
+</ScrollView>

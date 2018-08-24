@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.lalit.eventit.FrgEditEvent"
+    android:background="@color/eventBackground">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etEdittName"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Event Name"
+        android:background="@drawable/btn_login_main"
+        android:layout_marginTop="60sp"
+        android:paddingLeft="@dimen/marginBottom"
+        android:layout_marginHorizontal="@dimen/marginBottom"/>
+
+        <EditText
+            android:id="@+id/etEditStartDate"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:hint="Event Start Date"
+            android:enabled="false"
+            android:background="@drawable/btn_login_main"
+            android:layout_marginTop="@dimen/marginBottom"
+            android:paddingLeft="@dimen/marginBottom"
+            android:layout_marginHorizontal="@dimen/marginBottom"
+            android:drawableRight="@drawable/ic_calendar"
+            android:paddingRight="@dimen/marginBottom"/>
+
+        <EditText
+            android:id="@+id/etEditEndDate"
+            android:layout_width="match_parent"
+            android:layout_height="50sp"
+            android:hint="Event End Date"
+            android:enabled="false"
+            android:background="@drawable/btn_login_main"
+            android:layout_marginTop="@dimen/marginBottom"
+            android:paddingLeft="@dimen/marginBottom"
+            android:layout_marginHorizontal="@dimen/marginBottom"
+            android:drawableRight="@drawable/ic_calendar"
+            android:paddingRight="@dimen/marginBottom"/>
+
+    <EditText
+        android:id="@+id/etEditVenue"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Venue"
+        android:background="@drawable/btn_login_main"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:paddingLeft="@dimen/marginBottom"
+        android:layout_marginHorizontal="@dimen/marginBottom"/>
+
+    <EditText
+        android:id="@+id/etEditCity"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="City"
+        android:background="@drawable/btn_login_main"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:paddingLeft="@dimen/marginBottom"
+        android:layout_marginHorizontal="@dimen/marginBottom"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Issue Ticket Types"
+        android:layout_marginLeft="@dimen/marginButton"
+        android:textSize="@dimen/marginButton"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/marginBottom"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/marginBottom"
+        android:layout_marginTop="@dimen/marginBottom">
+
+        <Button
+            android:id="@+id/btnMainEventTicketPremium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Premium Ticket"
+            android:background="@drawable/btn_login_main"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_marginRight="5sp"/>
+
+        <Button
+            android:id="@+id/btnMainEventTicketGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gold Ticket"
+            android:background="@drawable/btn_login_main"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:layout_marginRight="5sp"/>
+
+        <Button
+            android:id="@+id/btnMainEventTicketClassic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Classic Ticket"
+            android:background="@drawable/btn_login_main"
+            android:layout_weight="1"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/etWebSiteLink"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Website Link"
+        android:background="@drawable/btn_login_main"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:paddingLeft="@dimen/marginBottom"
+        android:layout_marginHorizontal="@dimen/marginBottom"/>
+    <EditText
+        android:id="@+id/etVideoLink"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Video Link"
+        android:background="@drawable/btn_login_main"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:paddingLeft="@dimen/marginBottom"
+        android:layout_marginHorizontal="@dimen/marginBottom"/>
+    <EditText
+        android:id="@+id/etEventCat"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Event Category"
+        android:background="@drawable/btn_login_main"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:paddingLeft="@dimen/marginBottom"
+        android:layout_marginHorizontal="@dimen/marginBottom"/>
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:hint="Email"
+        android:background="@drawable/btn_login_main"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:paddingLeft="@dimen/marginBottom"
+        android:layout_marginHorizontal="@dimen/marginBottom"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="@dimen/marginBottom"
+        android:layout_marginTop="@dimen/marginBottom"
+        android:padding="@dimen/marginBottom"
+        android:background="@drawable/btn_login_main">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Entry"
+            android:gravity="center"
+            android:textSize="@dimen/marginButton"/>
+        <RadioGroup
+            android:id="@+id/rgSecurity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/marginButton">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Multiple Entry"
+                android:layout_weight="1"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="One Time Entry"
+                android:layout_weight="1"/>
+        </RadioGroup>
+    </LinearLayout>
+    <Switch
+        android:id="@+id/swHasSubEvent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SubEvent"
+        android:layout_marginHorizontal="@dimen/marginBottom"
+        android:layout_marginVertical="@dimen/marginBottom"
+        android:background="@drawable/btn_login_main"
+        android:padding="@dimen/marginButton" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/marginBottom">
+
+        <Button
+            android:id="@+id/btnPublish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Publish"
+            android:layout_weight="1"
+            android:background="@drawable/et_border"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_weight="1"
+            android:background="@drawable/et_border"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+</ScrollView>

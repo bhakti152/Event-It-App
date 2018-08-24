@@ -1,0 +1,56 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.lalit.eventit.FrgProfileUpcoming"
+    android:id="@+id/llPast"
+    android:orientation="vertical"
+    android:background="@color/eventBackground">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginVertical="@dimen/marginBottom">
+
+        <com.github.siyamed.shapeimageview.HexagonImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            app:siBorderWidth="4dp"
+            app:siBorderColor="#48D1CC"
+            android:src="@drawable/swoopzi"
+            android:layout_marginLeft="@dimen/marginBottom"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/marginButton">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Synapse"
+                android:textColor="@color/colorPurple"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/marginBottom"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fri Mar 30 2018 at 10:00 am"
+                android:textColor="@color/colorPurple"
+                android:layout_marginBottom="@dimen/marginBottom"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="at DA-IICT Gandhinagar"
+                android:textColor="@color/colorPurple"
+                android:layout_marginBottom="@dimen/marginBottom"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@color/colorPurple"/>
+
+</LinearLayout>
